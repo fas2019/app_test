@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset='utf-8'>
+		<title>Fas-Sistems</title>
+<style type='text/css'>
+ body {
+	background-image: url(SpryAssets/fondo_productoadd.jpg)
+}
+
+h5 {
+  color:  #000000;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+
+h6 {
+  color:  #000000;
+  font-weight: normal;
+  font-size:17px;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+label {
+  color:  #000000;
+  font-weight: normal;
+  font-size: 17px;
+  font-family: Arial;
+  text-transform: normal;
+}
+
+input{
+  color:  #0105F;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: Arial;
+  text-transform: normal;
+}
+
+
+label{font-family: Verdana, Geneva, sans-serif  ^
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+    color: #e5e5e5;
+    font: 16px/1.25 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+a {
+    color: #a2ed56;
+}
+
+a:hover {
+    color: #83e4e2;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80em;
+}
+
+main .container {
+    padding: 1em;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+}
+
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+
+
+/************************************************/
+/****************** NAVIGATION ******************/
+/************************************************/
+nav {
+    background: #e5e5e5;
+    color: #000000;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: block;
+    font: 2em/1 'Oswald', sans-serif;
+    padding: 0.5em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background:  #000000;
+    border-radius: 0.05 em;
+    height: 0.2em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+    background: #e5e5e5;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+
+/* List */
+nav ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+}
+
+nav input:checked ~ ul {
+    margin: 1em;
+    max-height: inherit;
+    opacity: 1;
+}
+
+nav ul > li {
+    margin: 0.5em 0;
+}
+
+nav ul a {
+    color: #1d1f20!important;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+nav ul#social-media > li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+</head>
+
+	<body>
+<nav>
+    <div class="container">
+        <input id="responsive-menu" type="checkbox">
+        <label for="responsive-menu">Fas Sistems - Menu <span id="menu-icon"></span></label>
+        <div id="overlay"></div>
+        <ul>
+            <li><a href='orlando.html'>Viaje Orlando</a></li>
+            <li><a href='productos.html'>Producto en casa</a></li>
+            <li><a href="fasmovies.html">Cargar peliculas - Fas Movies</a></li>
+            <li><a href='http://instructivo.url.ph/doku.php'>Instructivo FAS</a></li>
+            <li><a href='https://fasmovies574015844.wordpress.com/'>Fas Movies</a></li>
+
+        </ul>
+        <ul id="social-media">
+            <li>
+                <a href="https://dribbble.com/erinesullivan">
+                    <i class="fab fa-dribbble"></i>
+                    <span class="screen-reader-text">Dribbble</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://codepen.io/erinesullivan/">
+                    <i class="fab fa-codepen"></i>
+                    <span class="screen-reader-text">CodePen</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/erin_e_sullivan">
+                    <i class="fab fa-twitter"></i>
+                    <span class="screen-reader-text">Twitter</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/erinesullivan1">
+                    <i class="fab fa-linkedin"></i>
+                    <span class="screen-reader-text">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/erin_e_sullivan/">
+                    <i class="fab fa-instagram"></i>
+                    <span class="screen-reader-text">Instagram</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>>
+
+</div>
+</div>
+
+<div>.
+</div>
+
+<u><h5>Cargar productos(ya existentes)</h5></u>
+
+<h6>A tener en cuenta, los nombres no deben tener acentos y cualquier simbolo, ya que no son aceptados. </h6>
+
+<form  action='/productos' method='post'>
+
+  <div>
+  <label for='Producto' >_Que producto queres agregar?</label>
+  <input type='text' id= 'Producto'  name='Producto' >
+  </div>
+
+  <div>
+  <label for='modelo'>_Decime el modelo o nombre?</label>
+  <input type='text' id='modelo' name='modelo'>
+  </div>
+
+  <div>
+  <label for='medida'>_Que medida tiene? </label>
+  <input type='text' id='medida' name='medida'>
+  </div>
+
+
+<button>
+<input type='submit' value='submit' >
+</button>
+
+
+
+<button2>
+<input type="button" onclick="location.href='http://fas-sistems.pe.hu/mostrar_registros_productos.php' " value="Ver info en tabla"   />
+</button2>
+
+
+
+
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"/static/SpryAssets/SpryMenuBarDownHover.gif", imgRight:"/static/SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</html>
+
+</body>
+</form>
+</html>
