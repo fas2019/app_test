@@ -1,0 +1,21 @@
+#button {
+ padding: 0;
+ }
+
+Este código elimina el padding que se puede crear por defecto en una lista de elementos, en este caso nuestro menú.
+
+Por defecto, estas listas se crean de forma vertical, pero nuestro menú tiene que ser horizontal, así que le diremos que se pongan en línea usando “display: inline.”
+
+#button li {
+ display: inline;
+ }
+ 
+ #button li a {
+ font-family: Arial;
+ font-size: 11px;
+ text-decoration: none;
+ float: left;
+ padding: 10px;
+ background-color: #2175bc;
+ color: #fff;
+ }
