@@ -35,7 +35,7 @@ def personas():
 	Pesos=round(float(Importe_Dolar)*float(TC),2)
 	pesos_unidad=round((float(Importe_Dolar)/float(Cantidad))*float(TC),2)
 
-	db = pymysql.connect(host="sql8.main-hosting.eu.",user="u644738137_alito",password="SZ17eSOr8Jn1Lv441",db="u644738137_fas2", port=3306)
+	db = pymysql.connect(host="",user="",password="",db="", port=)
 
 	cursor = db.cursor()
 
@@ -64,7 +64,7 @@ def productos():
 	medida= request.form['medida']
 
 
-	db = pymysql.connect(host="sql8.main-hosting.eu.",user="u644738137_alito",password="SZ17eSOr8Jn1Lv441",db="u644738137_fas2", port=3306)
+	db = pymysql.connect(host="",user="",password="",db="", port=)
 
 	cursor = db.cursor()
 
@@ -97,7 +97,7 @@ def peliculas():
 	tipo= request.form['tipo']
 
 
-	db = pymysql.connect(host="sql8.main-hosting.eu.",user="u644738137_alito",password="SZ17eSOr8Jn1Lv441",db="u644738137_fas2", port=3306)
+	db = pymysql.connect(host="",user="",password="",db="", port=)
 
 	cursor = db.cursor()
 
