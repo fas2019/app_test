@@ -2,10 +2,10 @@
 
 ////////////////// CONEXION A LA BASE DE DATOS ////////////////////////////////////
 
-$host="sql8.main-hosting.eu.";
-$modelo="u644738137_alito";
-$contraseña="SZ17eSOr8Jn1Lv441";
-$base="u644738137_fas2";
+$host="";
+$modelo="";
+$contraseña="";
+$base="";
 
 $conexion= new mysqli($host, $modelo, $contraseña, $base);
 if ($conexion -> connect_errno)
