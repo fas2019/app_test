@@ -1,0 +1,22 @@
+<html lang="es">
+
+	<head>
+		<title>Registro de FAS MOVIES</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+		<link href="css/estilos.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	</head>
+
+
+<script>
+function ver(image){
+document.getElementById('image').innerHTML = "<img src='"+image+"'>" 
+}
+</script>
+<form action="sube.php" method="post" enctype="multipart/form-data"> 
+    Archivo: <input name="file" type="file"  onChange="ver(form.file.value)"> 
+    <input name="submit" type="submit" value="Upload!">  
+</form><br> <span id="image"></span> 
